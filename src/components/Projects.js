@@ -38,7 +38,7 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>About Me</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>I'm a forward-thinking front-end developer, proficient in a range of technologies including HTML5, CSS3, JavaScript, ReactJS, and Redux, I specialize in creating engaging user interfaces that seamlessly blend aesthetics with functionality. With a passion for collaboration and a keen eye for detail, I thrive on turning ideas into captivating digital experiences. If you're looking for a dedicated developer who brings both technical expertise and a creative edge to the table, I'm eager to help bring your projects to life.</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>

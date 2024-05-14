@@ -247,7 +247,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1.5em;
   width: 96%;
 }
-.banner button {
+.banner .connect-btn {
   color: #fff;
   font-weight: 700;
   font-size: 20px;
@@ -256,18 +256,36 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   align-items: center;
 }
-.banner button svg {
+.banner .connect-btn svg {
   font-size: 25px;
   margin-left: 10px;
   transition: 0.3s ease-in-out;
   line-height: 1;
 }
-.banner button:hover svg {
+.banner .connect-btn:hover svg {
   margin-left: 25px;
 }
 .banner img {
   animation: updown 3s linear infinite;
 }
+.download-cv-btn{
+  font-weight: 700;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 18px 34px;
+  font-size: 18px;
+	position: relative;
+	background-color: transparent;
+	transition: 0.3s ease-in-out;
+  margin-top: 15px;
+}
+
+.download-cv-btn:hover {
+  color: #121212;
+  background-color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
 @keyframes updown {
     0% {
         transform: translateY(-20px);
