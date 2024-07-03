@@ -7,10 +7,12 @@ const WorkExperience = () => {
         company: "TCS",
         location: "Bangalore, India",
         position: "System Engineer",
-        duration: "01/2023 - Present",
+        duration: "01/2023 - 09/2024",
         details: [
-          "Developed a dynamic e-commerce platform using React.js, spearheading the creation of a real-time product customization feature that heightened user engagement. Implemented efficient state management through React Hooks, developed reusable components adhering to best practices, and optimized performance using code splitting, lazy loading, and responsive design strategies.",
-          "Integrated RESTful APIs seamlessly with React, conducting performance audits, and ensuring code quality through rigorous unit testing with Jest and React Testing Library. Collaborated with cross-functional teams. Utilized Webpack and Babel for bundling and transpiling JavaScript code."
+          "Worked for a leading aircraft manufacturer client, using React, Redux, Kendo UI, MUI.",
+          "Integrated RESTful APIs to fetch and update data, optimizing application performance and responsiveness, leading to a 15% increase in application speed.",
+          "Collaborated with cross-functional teams, including 10 designers and backend developers, to translate design specification into functional code, resulting in a 20% increase in development efficiency.",
+          "Utilized Webpack and Babel for bundling and transpiling JavaScript code."
         ]
       },
       {
@@ -19,13 +21,15 @@ const WorkExperience = () => {
         position: "Senior Software Engineer",
         duration: "01/2021 - 01/2023",
         details: [
-          "Worked with web development technologies such as ReactJs,JavaScript, Bootstrap, CSS, and HTML. My role involved implementing Bootstrap plugins to create dynamic components like carousels, accordions, and modal windows. I excelled in identifying and developing highly-responsive user components, ensuring an enhanced and engaging user experience."
+          "Worked for a leading US based ecom(healthcare) client using technologies such as React, JavaScript, Bootstrap, CSS, and HTML. Played a key role in troubleshooting, improving code quality, reducing the number of bugs and issues reported in subsequent releases by 50%.",
+          "I excelled in identifying and developing highly responsive user components, ensuring an enhanced and engaging user experience by 20%.",
+          "Played a pivotal role in meeting project deadlines, ensuring timely delivery of highquality software, contributing to a 95% on time project completion rate."
         ]
       },
       {
         company: "JBS Capacitors Pvt Ltd",
         location: "Bhubaneswar, India",
-        position: "Engineering Intern",
+        position: "UI/UX Developer",
         duration: "04/2020 - 10/2020",
         details: [
           "Worked on a data annotation project using python.",
