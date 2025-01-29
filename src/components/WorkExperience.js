@@ -1,8 +1,18 @@
 import React from 'react';
 
 const WorkExperience = () => {
-    // Define array of work experiences
     const experiences = [
+      {
+        company: "iOPEX Technologies",
+        location: "Bangalore, India",
+        position: " Senior Software Engineer ",
+        duration: "10/2024 - Present",
+        details: [
+          "Developed and maintained full-stack web applications using MongoDB, Express.js, React.js and Node.js, ensuring optimal performance and scalability. ",
+          "Designed, implemented, and integrated RESTful APIs to enable seamless communication between frontend and backend services.",
+          "Optimized application performance, reducing load times by 30% through efficient database queries and frontend optimizations."
+        ]
+      },
       {
         company: "TCS",
         location: "Bangalore, India",
@@ -12,7 +22,8 @@ const WorkExperience = () => {
           "Worked for a leading aircraft manufacturer client, using React, Redux, Kendo UI, MUI.",
           "Integrated RESTful APIs to fetch and update data, optimizing application performance and responsiveness, leading to a 15% increase in application speed.",
           "Collaborated with cross-functional teams, including 10 designers and backend developers, to translate design specification into functional code, resulting in a 20% increase in development efficiency.",
-          "Utilized Webpack and Babel for bundling and transpiling JavaScript code."
+          "Utilized Webpack and Babel for bundling and transpiling JavaScript code.",
+          "Built responsive landing pages using HTML, CSS and JavaScript, with Marketo and PathFactory to enhance marketing campaign effectiveness."
         ]
       },
       {
@@ -24,16 +35,6 @@ const WorkExperience = () => {
           "Worked for a leading US based ecom(healthcare) client using technologies such as React, JavaScript, Bootstrap, CSS, and HTML. Played a key role in troubleshooting, improving code quality, reducing the number of bugs and issues reported in subsequent releases by 50%.",
           "I excelled in identifying and developing highly responsive user components, ensuring an enhanced and engaging user experience by 20%.",
           "Played a pivotal role in meeting project deadlines, ensuring timely delivery of highquality software, contributing to a 95% on time project completion rate."
-        ]
-      },
-      {
-        company: "JBS Capacitors Pvt Ltd",
-        location: "Bhubaneswar, India",
-        position: "UI/UX Developer",
-        duration: "04/2020 - 10/2020",
-        details: [
-          "Worked on a data annotation project using python.",
-          "Worked on a web development project using HTML, CSS."
         ]
       }
     ];
