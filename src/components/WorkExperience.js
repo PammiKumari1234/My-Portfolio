@@ -8,9 +8,9 @@ const WorkExperience = () => {
         position: " Senior Software Engineer ",
         duration: "10/2024 - Present",
         details: [
-          "Developed and maintained full-stack web applications using MongoDB, Express.js, React.js and Node.js, ensuring optimal performance and scalability. ",
-          "Designed, implemented, and integrated RESTful APIs to enable seamless communication between frontend and backend services.",
-          "Optimized application performance, reducing load times by 30% through efficient database queries and frontend optimizations."
+          "Developed and optimized highly interactive, mobile-responsive user interfaces using React.js, JavaScript, HTML, and CSS, ensuring a seamless user experience across devices.",
+          "Collaborated closely with design and marketing teams to implement pixel-accurate, accessible, and maintainable components.",
+          "Created and executed unit and component tests using Jest, ensuring robust, bug-free code and increasing test coverage across critical features. "
         ]
       },
       {
@@ -19,10 +19,9 @@ const WorkExperience = () => {
         position: "System Engineer",
         duration: "01/2023 - 09/2024",
         details: [
-          "Worked for a leading aircraft manufacturer client, using React, Redux, Kendo UI, MUI.",
-          "Integrated RESTful APIs to fetch and update data, optimizing application performance and responsiveness, leading to a 15% increase in application speed.",
-          "Collaborated with cross-functional teams, including 10 designers and backend developers, to translate design specification into functional code, resulting in a 20% increase in development efficiency.",
-          "Utilized Webpack and Babel for bundling and transpiling JavaScript code.",
+          "Developed and implemented highly interactive and maintainable user interfaces for a leading aircraft manufacturer using React.js, Redux, Kendo UI, and TypeScript.",
+          "Integrated REST APIs, implemented caching and batching strategies, and optimized rendering, achieving a 15% improvement in application performance and responsiveness.",
+          "Enhanced user interfaces with dynamic rendering and component-based architecture in React.js, resulting in a more modular and scalable codebase. ",
           "Built responsive landing pages using HTML, CSS and JavaScript, with Marketo and PathFactory to enhance marketing campaign effectiveness."
         ]
       },
@@ -32,9 +31,9 @@ const WorkExperience = () => {
         position: "Senior Software Engineer",
         duration: "01/2021 - 01/2023",
         details: [
-          "Worked for a leading US based ecom(healthcare) client using technologies such as React, JavaScript, Bootstrap, CSS, and HTML. Played a key role in troubleshooting, improving code quality, reducing the number of bugs and issues reported in subsequent releases by 50%.",
-          "I excelled in identifying and developing highly responsive user components, ensuring an enhanced and engaging user experience by 20%.",
-          "Played a pivotal role in meeting project deadlines, ensuring timely delivery of highquality software, contributing to a 95% on time project completion rate."
+          "Developed highly responsive, component-driven user interfaces for a leading US-based e-commerce(healthcare) client using React.js, JavaScript, CSS, and HTML, focusing on accessibility and mobile responsiveness.",
+          "Created and implemented advanced user components, achieving a 20% improvement in user engagement and conversion rates.",
+          "Created unit and component test cases using Jest, increasing code reliability, and ensuring seamless deployment across environments. "
         ]
       }
     ];

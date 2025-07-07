@@ -20,14 +20,14 @@ const Education = () => {
       qualification: "10+2",
       institute: "SJ DAV Public School",
       location: "Chaibasa, Jharkhand",
-      duration: "Year of Passing: 2015", // Update with actual year
+      duration: "Year of Passing: 2015", 
       result: "Percentage: 71.2%"
     },
     {
       qualification: "10",
       institute: "SJ DAV Public School",
       location: "Chaibasa, Jharkhand",
-      duration: "Year of Passing: 2013", // Update with actual year
+      duration: "Year of Passing: 2013", 
       result: "CGPA 8"
     }
   ];

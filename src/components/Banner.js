@@ -92,13 +92,11 @@ export const Banner = () => {
                   </h2>
 
                   <p>
-                    With over 4 years in front-end development, I specialize in
-                    crafting dynamic web applications. Proficient in HTML5, CSS3
-                    (Bootstrap, SASS, Tailwind, Material UI), JS, ReactJS,
-                    Redux, TypeScript and NextJS I focus on creating engaging
-                    user interfaces. Experienced with Webpack/parcel for
-                    efficient builds, and Git/GitHub for version control, I also
-                    integrate seamlessly with REST/Web APIs.
+                    Highly motivated Senior Software Engineer with 4+ years of experience in building robust, maintainable, 
+and high-performance user interfaces. Skilled in React.js, TypeScript, JavaScript, HTML, and CSS, with 
+strong expertise in state management, component-driven architecture, and API integration. Passionate 
+about crafting seamless, responsive, and user centric experiences, and proficient in leading frontend best 
+practices to deliver impactful business results. 
                   </p>
                   <button className="connect-btn" onClick={handleClick}>
                     Let’s Connect <ArrowRightCircle size={25} />
