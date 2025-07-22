@@ -7,34 +7,24 @@ const WorkExperience = () => {
         location: "Bangalore, India",
         position: " Senior Software Engineer ",
         duration: "10/2024 - Present",
-        details: [
-          "Developed and optimized highly interactive, mobile-responsive user interfaces using React.js, JavaScript, HTML, and CSS, ensuring a seamless user experience across devices.",
-          "Collaborated closely with design and marketing teams to implement pixel-accurate, accessible, and maintainable components.",
-          "Created and executed unit and component tests using Jest, ensuring robust, bug-free code and increasing test coverage across critical features. "
-        ]
+        techstack: "React.js, Redux, JavaScript, HTML, CSS, Jest",
+        summary:"Building responsive UI components, collaborating across teams, and implementing tests for stability."
       },
       {
         company: "TCS",
         location: "Bangalore, India",
         position: "System Engineer",
         duration: "01/2023 - 09/2024",
-        details: [
-          "Developed and implemented highly interactive and maintainable user interfaces for a leading aircraft manufacturer using React.js, Redux, Kendo UI, and TypeScript.",
-          "Integrated REST APIs, implemented caching and batching strategies, and optimized rendering, achieving a 15% improvement in application performance and responsiveness.",
-          "Enhanced user interfaces with dynamic rendering and component-based architecture in React.js, resulting in a more modular and scalable codebase. ",
-          "Built responsive landing pages using HTML, CSS and JavaScript, with Marketo and PathFactory to enhance marketing campaign effectiveness."
-        ]
+        techstack: "React.js, Redux, TypeScript, Kendo UI, REST APIs",
+        summary:"Developed performant UIs, improved rendering speed, and optimized API handling."
       },
       {
         company: "Capgemini India Pvt Ltd",
         location: "Kolkata, India",
         position: "Senior Software Engineer",
         duration: "01/2021 - 01/2023",
-        details: [
-          "Developed highly responsive, component-driven user interfaces for a leading US-based e-commerce(healthcare) client using React.js, JavaScript, CSS, and HTML, focusing on accessibility and mobile responsiveness.",
-          "Created and implemented advanced user components, achieving a 20% improvement in user engagement and conversion rates.",
-          "Created unit and component test cases using Jest, increasing code reliability, and ensuring seamless deployment across environments. "
-        ]
+        techstack: "React.js, JavaScript, HTML, CSS",
+        summary:"Created healthcare e-commerce UIs, boosted engagement through modular components and accessibility."
       }
     ];
   
@@ -48,12 +38,14 @@ const WorkExperience = () => {
                 <p>{experience.position}</p>
                 <p>{experience.location}</p>
                 <p>{experience.duration}</p>
+                <p>{experience.techstack}</p>
+                <p>{experience.summary}</p>
             </div>
-            <ul>
+            {/* <ul>
               {experience.details.map((detail, idx) => (
                 <li key={idx}>{detail}</li>
               ))}
-            </ul>
+            </ul> */}
           </div>
         ))}
       </div>

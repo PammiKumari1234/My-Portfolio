@@ -796,3 +796,106 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 20px;
   color: white;
 }
+
+
+/* DSA section */
+.carousel-section {
+  padding: 30px;
+  text-align: center;
+}
+
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;   
+  gap: 20px;                 
+  max-width: 1200px;         
+  margin: 0 auto;            
+  min-height: 320px;        
+  align-items: center;
+}
+
+.carousel-container {
+  display: flex;
+  overflow: hidden;
+  gap: 15px;
+  width: 80%;
+  transition: all 0.3s ease;
+}
+
+.carousel-card {
+  width: 100%;
+  max-width: 220px;
+  flex: 0 0 auto;
+  padding: 20px;
+  background: #151515;
+  color: white;
+  border-radius: 12px;
+  text-align: center;
+  margin: 0 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+.carousel-card h3{
+  font-size:20px;
+}
+.carousel-card a{
+  text-decoration: none;
+  color: white;
+}
+.carousel-card a:hover{
+  color: purple;
+}
+.git-img {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(168, 163, 163, 0.1);
+  color: #ffffff;
+  font-size: 22px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  border: none;
+}
+.nav-button.visible {
+  visibility: visible;
+  opacity: 1;
+}
+.nav-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+.nav-button.left,
+.nav-button.right {
+  position: static;
+}
+.DSA-sub, .DSA-sub-sub {
+  font-size: 16px;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+/*system-design */
+.system-design{
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  padding: 40px;
+}
+.system-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.system-info p{
+  width: 60%;
+  text-align: center;
+  margin: 20px;
+}
+

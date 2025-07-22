@@ -2,6 +2,7 @@ import {React} from "react";
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import CounterApp from "../assets/img/counter-app.png"
+import kanbanly from "../assets/img/kanbanly.png"
 import foodapp from "../assets/img/foodApp.png"
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
@@ -13,14 +14,14 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Counter Game",
-      description: "A simple counter game  built with React",
-      imgUrl: CounterApp,
-      url: "https://pammikumari1234.github.io/counter-game/",
+      title: "Kanbanly",
+      description: "Kanban Dashboard made with Next.js, TypeScript, Tailwind CSS (Work in Progress)",
+      imgUrl: kanbanly,
+      url: "https://kanbanly.vercel.app/kanban",
     },
     {
       title: "Food App",
-      description: "A food ordering app that fetches the data from live API(swiggy.com)",
+      description: "A food ordering app that fetches the data from live API(swiggy.com) Note- To fetch from API you need to enable CORS on your browser.",
       imgUrl: foodapp,
       url: "https://namaste-react-phi-one.vercel.app/",
     },
