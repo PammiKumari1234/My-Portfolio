@@ -38,7 +38,7 @@ const WhatHappensURL = () => {
 
   return (
     <section className="blog-post-detail">
-        <CommonNav/>
+        {/* <CommonNav/> */}
       <div className='blog-content-wrapper'>
         <h1>{blogPost.title}</h1>
       <div className="blog-post-content">
