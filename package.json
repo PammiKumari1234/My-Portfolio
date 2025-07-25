@@ -26,10 +26,11 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "npm run build-deploy",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build-deploy": "PUBLIC_URL=/My-Portfolio react-scripts build", 
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

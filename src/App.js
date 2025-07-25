@@ -5,7 +5,7 @@ import { NavBar } from './components/NavBar';
 import { Banner } from './components/Banner';
 import Skills from './components/Skills';
 import { Projects } from './components/Projects';
-import { Contact } from './components/Contact';
+import { Contact } from './components/Contact'; // Still commented out, just noting
 import { Footer } from './components/Footer';
 import DsaJournal from './components/DsaJournal';
 import SystemDesign from './components/SystemDesign';
@@ -15,17 +15,18 @@ import WhatHappensURL from './components/Blogs/WhatHappensURL';
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {
+  const routerBasename = process.env.NODE_ENV === 'production' && process.env.PUBLIC_URL
+                         ? process.env.PUBLIC_URL
+                         : '';
   return (
     <div className="App">
-      {/* Add the basename prop to BrowserRouter */}
-      <Router basename="/My-Portfolio">
-        <ScrollToTop />
-
-        <NavBar/>
-
-        <main className="main-content-area">
+      <Router basename={routerBasename}> 
+      {/* <Router>  */}
+        <ScrollToTop /> 
+        <NavBar/> 
+        <main className="main-content-area"> 
           <Routes>
-            <Route path="/" element={ // This will now correctly match /My-Portfolio/
+            <Route path="/" element={
               <>
                 <Banner/>
                 <Skills/>
@@ -33,17 +34,14 @@ function App() {
                 <DsaJournal/>
                 <SystemDesign/>
                 <Blogs/>
-                {/* <Contact/> */}
               </>
             } />
-
-            {/* These paths will also correctly be relative to /My-Portfolio/ */}
+            
             <Route path="/blogs" element={<Blogs />} />
             <Route path="/blogs/:slug" element={<WhatHappensURL />} />
           </Routes>
         </main>
-
-        <Footer/>
+        <Footer/> 
       </Router>
     </div>
   );

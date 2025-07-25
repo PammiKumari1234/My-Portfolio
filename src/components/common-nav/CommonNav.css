@@ -2,7 +2,6 @@
     width: 100%;
     top: 0;
     z-index: 9999;
-    transition:  0.32s ease-in-out;
     background-color: #121212;
     padding: 20px;
 }
