@@ -8,18 +8,34 @@ import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import DsaJournal from './components/DsaJournal';
 import SystemDesign from './components/SystemDesign';
+import Blogs from './components/Blogs';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import WhatHappensURL from './components/Blogs/WhatHappensURL';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <div className="App">
-      <NavBar/>
-      <Banner/>
-      <Skills/>
-      <Projects/>
-      <DsaJournal/>
-      <SystemDesign/>
-      {/* <Contact/> */}
-      <Footer/>
+      <Router> 
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" element={
+            <>
+            <NavBar/> 
+              <Banner/>
+              <Skills/>
+              <Projects/>
+              <DsaJournal/>
+              <SystemDesign/>
+              <Blogs/>
+            </>
+          } />
+          
+          <Route path="/blogs" element={<Blogs />} />
+          <Route path="/blogs/:slug" element={<WhatHappensURL />} />
+        </Routes>
+        <Footer/>
+      </Router>
     </div>
   );
 }

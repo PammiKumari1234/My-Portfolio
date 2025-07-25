@@ -8,7 +8,7 @@ const dsaCategories = [
   { id: "patterns", category: "Patterns", link: "https://github.com/PammiKumari1234/DSA/tree/main/patterns" },
   { id: "strings", category: "Strings", link: "https://github.com/PammiKumari1234/DSA/tree/main/strings" },
   { id: "sorting", category: "Searching/Sorting", link: "https://github.com/PammiKumari1234/DSA/tree/main/searching-sorting" },
-  { id: "linked-list", category: "Linked List", link: "" },
+  { id: "linked-list", category: "Linked List", link: "https://github.com/PammiKumari1234/DSA/tree/main/linked-list" },
   { id: "stacks-queues", category: "Stacks/Queues", link: "" }
 ];
 
