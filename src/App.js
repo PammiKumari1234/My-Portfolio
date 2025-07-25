@@ -5,7 +5,7 @@ import { NavBar } from './components/NavBar';
 import { Banner } from './components/Banner';
 import Skills from './components/Skills';
 import { Projects } from './components/Projects';
-import { Contact } from './components/Contact'; // Still commented out, just noting
+import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import DsaJournal from './components/DsaJournal';
 import SystemDesign from './components/SystemDesign';
@@ -17,17 +17,15 @@ import ScrollToTop from './components/ScrollToTop';
 function App() {
   return (
     <div className="App">
-      <Router> 
-        <ScrollToTop /> {/* Good to keep this at the top inside Router */}
+      {/* Add the basename prop to BrowserRouter */}
+      <Router basename="/My-Portfolio">
+        <ScrollToTop />
 
-        {/* Place NavBar *outside* Routes so it's always present */}
-        <NavBar/> 
-        
-        {/* This `main` wrapper is for content that changes with routes */}
-        <main className="main-content-area"> 
+        <NavBar/>
+
+        <main className="main-content-area">
           <Routes>
-            {/* The home route content */}
-            <Route path="/" element={
+            <Route path="/" element={ // This will now correctly match /My-Portfolio/
               <>
                 <Banner/>
                 <Skills/>
@@ -38,17 +36,14 @@ function App() {
                 {/* <Contact/> */}
               </>
             } />
-            
-            {/* The main blogs listing page */}
+
+            {/* These paths will also correctly be relative to /My-Portfolio/ */}
             <Route path="/blogs" element={<Blogs />} />
-            
-            {/* A specific blog post page */}
             <Route path="/blogs/:slug" element={<WhatHappensURL />} />
           </Routes>
         </main>
-        
-        {/* Place Footer *outside* Routes so it's always present */}
-        <Footer/> 
+
+        <Footer/>
       </Router>
     </div>
   );
