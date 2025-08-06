@@ -18,8 +18,8 @@ export const Footer = () => {
       setTimeout(()=>{
         setIndexQ(prev=>(prev+1)%quotes.length);
         setSliding(false);
-      },300)
-    },3000);
+      },500)
+    },5000);
     return()=>clearInterval(interval);
   },[quotes.length])
   return (

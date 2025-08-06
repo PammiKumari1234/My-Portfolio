@@ -32,7 +32,7 @@ const Blogs = () => {
     return (
   <section className="single-blog">
     {blog.content}
-    <Link to="/blogs"><button style={{color:"white"}}>← Back to Blogs</button></Link>
+    {/* <Link to="/blogs"><button style={{color:"white"}}>← Back to Blogs</button></Link> */}
   </section>
 );
 
