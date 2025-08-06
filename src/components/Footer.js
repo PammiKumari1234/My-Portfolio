@@ -6,7 +6,6 @@ import { useEffect, useState } from "react";
 const quotes=[
   "If you're the Smartest person in the room, you're in the wrong room",
   "The best time to plant the tree was 20 years ago, and the second best time is now.",
-  "The only way to do great work is to love what you do.",
   "Success is not final, failure is not fatal: it is the courage to continue that counts."
 ]
 
