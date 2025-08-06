@@ -1,8 +1,28 @@
 import { Container, Row, Col } from "react-bootstrap";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
+import { useEffect, useState } from "react";
+
+const quotes=[
+  "If you're the Smartest person in the room, you're in the wrong room",
+  "The best time to plant the tree was 20 years ago, and the second best time is now.",
+  "The only way to do great work is to love what you do.",
+  "Success is not final, failure is not fatal: it is the courage to continue that counts."
+]
 
 export const Footer = () => {
+  const[indexQ,setIndexQ]=useState(0);
+  const[sliding,setSliding]=useState(false);
+  useEffect(()=>{
+    const interval=setInterval(()=>{
+      setSliding(true);
+      setTimeout(()=>{
+        setIndexQ(prev=>(prev+1)%quotes.length);
+        setSliding(false);
+      },300)
+    },3000);
+    return()=>clearInterval(interval);
+  },[quotes.length])
   return (
     <footer className="footer">
       <Container>
@@ -15,9 +35,8 @@ export const Footer = () => {
             </div> */}
             <div className="quotes-container">
               <p className="quotes">Quotes</p>
-              <p className="qt">
-                If you're the Smartest person in the room, you're in the wrong
-                room
+              <p className={`qt ${sliding ? "slide" : ""}`}>
+                {quotes[indexQ]}
               </p>
             </div>
           </Col>

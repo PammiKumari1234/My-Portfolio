@@ -8,5 +8,112 @@
     padding-left: 20px; 
     padding-right: 20px; 
     box-sizing: border-box;
-    padding-top: 200px;
+    padding-top: 200px !important;
+}
+
+.blog-post-container {
+    font-family: 'Segoe UI', 'Roboto', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 800px;
+    margin: 40px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-post-content h2 {
+    font-size: 1.6em;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.blog-post-content h3 {
+    font-size: 1.6em;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid;
+    padding-bottom: 5px;
+}
+
+.blog-post-content p {
+    margin-bottom: 15px;
+    font-size: 1.05em;
+}
+
+.blog-post-content ul {
+    list-style-type: disc;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+.blog-post-content li {
+    margin-bottom: 8px;
+    font-size: 1em;
+}
+
+.blog-post-content code {
+    font-family: 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+    font-size: 0.9em;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+.light-mode .blog-post-container {
+    background-color: #f9f9f9;
+    color: #333;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.light-mode .blog-post-content h2,
+.light-mode .blog-post-content h3 {
+    color: #2c3e50;
+}
+
+.light-mode .blog-post-content h3 {
+    border-bottom-color: #a7d9f7;
+}
+
+.light-mode .blog-post-content code {
+    background-color: #e0e0e0;
+    color: #c0392b; 
+}
+
+.dark-mode .blog-post-container {
+    background-color: #282c34;
+    color: #e0e0e0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.dark-mode .blog-post-content h2,
+.dark-mode .blog-post-content h3 {
+    color: #61dafb; /* React blue */
+}
+
+.dark-mode .blog-post-content h3 {
+    border-bottom-color: #444a57;
+}
+
+.dark-mode .blog-post-content code {
+    background-color: #3e4451;
+    color: #e6c07b;
+}
+
+.blog-post-detail {
+    padding-top: 20px; 
+}
+
+.blog-content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.blog-content-wrapper h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: inherit; 
 }
